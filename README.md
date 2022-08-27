@@ -2,6 +2,8 @@
 
 Primer trabajo grupal en GitHub de Práctica Profesionalizante.
 
+`git clone https://github.com/Anonyzard/pp2-practico1 proyecto1practica2`
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
