@@ -24,15 +24,17 @@ class Login extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text('Todo por 2 pesos'),
-          backgroundColor: Color.fromARGB(255, 201, 117, 21),
+          backgroundColor: Theme.of(context)
+              .backgroundColor, //Color.fromARGB(255, 201, 117, 21),
         ),
-        backgroundColor: Color.fromRGBO(255, 201, 117, 21),
+        backgroundColor: Theme.of(context)
+            .secondaryHeaderColor, //Color.fromRGBO(255, 201, 117, 21),
         body: Column(children: <Widget>[
           Container(
               margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                color: Color.fromRGBO(255, 201, 117, 21),
+                color: Theme.of(context).highlightColor,
               ),
               child: TextFormField(
                 key: _nombre,
@@ -49,9 +51,10 @@ class Login extends StatelessWidget {
           Container(
               margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0),
-                color: Color.fromRGBO(255, 201, 117, 21),
-              ),
+                  borderRadius: BorderRadius.circular(10.0),
+                  color: Theme.of(context)
+                      .highlightColor //Color.fromRGBO(255, 201, 117, 21),
+                  ),
               child: TextFormField(
                 decoration:
                     InputDecoration(labelText: 'Ingrese su constraseña'),
@@ -62,21 +65,28 @@ class Login extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10.0),
                 // color: Color.fromARGB(255, 201, 117, 21),
               ),
-              child: TextButton(
+              child: OutlinedButton(
                 onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => Signin()),
                   );
                 },
-                child: Text('Sign In'),
+                child: Text(
+                  'Sign In',
+                  style: TextStyle(
+                    color: Theme.of(context).backgroundColor,
+                  ),
+                ),
               )),
           Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
               color: Color.fromARGB(255, 201, 117, 21),
             ),
-            child: ElevatedButton(
+            child: MaterialButton(
+              color: Theme.of(context)
+                  .backgroundColor, //Color.fromARGB(255, 201, 117, 21),
               // style: ButtonStyle(
               //     backgroundColor: Color.fromARGB(255, 201, 117, 21)), //,
               onPressed: () {
@@ -92,7 +102,10 @@ class Login extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => main_screens()),
                 );
               },
-              child: const Text('Iniciar sesión'),
+              child: Text(
+                'Iniciar sesión',
+                style: TextStyle(color: Theme.of(context).highlightColor),
+              ),
             ),
           ),
         ]),
