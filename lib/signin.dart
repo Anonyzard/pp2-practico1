@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(Login());
+void main() => runApp(Signin());
 
-class Login extends StatelessWidget {
+class Signin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
