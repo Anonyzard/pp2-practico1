@@ -7,10 +7,10 @@ class Signin extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Material App',
+      title: 'Todo por 2 pesos',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Material App Bar'),
+          title: Text('Todo por 2 pesos'),
         ),
         body: Column(children: <Widget>[
           Container(
@@ -23,6 +23,17 @@ class Signin extends StatelessWidget {
             decoration: InputDecoration(labelText: 'Ingrese su constraseña'),
             obscureText: true,
           )),
+          Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                // color: Color.fromARGB(255, 201, 117, 21),
+              ),
+              child: TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text('Log In'),
+              )),
         ]),
       ),
     );

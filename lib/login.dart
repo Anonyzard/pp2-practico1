@@ -59,11 +59,14 @@ class Login extends StatelessWidget {
           Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                color: Color.fromARGB(255, 201, 117, 21),
+                // color: Color.fromARGB(255, 201, 117, 21),
               ),
               child: TextButton(
                 onPressed: () {
-                  Signin();
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Signin()),
+                  );
                 },
                 child: Text('Sign In'),
               )),
@@ -82,6 +85,10 @@ class Login extends StatelessWidget {
                   // you'd often call a server or save the information in a database.
                   ScaffoldMessenger.of(context).showSnackBar(
                     const SnackBar(content: Text('Processing Data')),
+                  );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Signin()),
                   );
                 }
               },
