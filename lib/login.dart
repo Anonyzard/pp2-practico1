@@ -21,15 +21,28 @@ class Login extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
+      
       home: Scaffold(
         appBar: AppBar(
           title: Text('Todo por 2 pesos'),
+          //drawer: const Image.asset('assets/logo/logoapptodopordospesos.png')
           backgroundColor: Theme.of(context)
               .backgroundColor, //Color.fromARGB(255, 201, 117, 21),
         ),
         backgroundColor: Theme.of(context)
             .secondaryHeaderColor, //Color.fromRGBO(255, 201, 117, 21),
         body: Column(children: <Widget>[
+            Container(
+              margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                color: Theme.of(context).highlightColor,
+              ),
+              child:(
+                Image.asset('assets/logo/logoapptodopordospesos.png',
+                      width: 100,
+                      height: 100,)
+                )),
           Container(
               margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
               decoration: BoxDecoration(

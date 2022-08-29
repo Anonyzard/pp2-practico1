@@ -5,43 +5,7 @@ import 'package:proyecto1practica2/pages/main_screen.dart';
 
 void main() => runApp(Signin());
 
-// class Signin extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       title: 'Todo por 2 pesos',
-//       home: Scaffold(
-//         appBar: AppBar(
-//           title: Text('Todo por 2 pesos'),
-//         ),
-//         body: Column(children: <Widget>[
-//           Container(
-//               child: TextFormField(
-//             decoration: InputDecoration(labelText: 'Ingrese su nombre'),
-//             obscureText: false,
-//           )),
-//           Container(
-//               child: TextFormField(
-//             decoration: InputDecoration(labelText: 'Ingrese su constraseña'),
-//             obscureText: true,
-//           )),
-//           Container(
-//               decoration: BoxDecoration(
-//                 borderRadius: BorderRadius.circular(10.0),
-//                 // color: Color.fromARGB(255, 201, 117, 21),
-//               ),
-//               child: TextButton(
-//                 onPressed: () {
-//                   Navigator.pop(context);
-//                 },
-//                 child: Text('Log In'),
-//               )),
-//         ]),
-//       ),
-//     );
-//   }
-// }
+
 
 class Signin extends StatelessWidget {
   @override
@@ -59,8 +23,19 @@ class Signin extends StatelessWidget {
         backgroundColor: Theme.of(context)
             .secondaryHeaderColor, //Color.fromRGBO(255, 201, 117, 21),
         body: Column(children: <Widget>[
-          Container(
+            Container(
               margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                color: Theme.of(context).highlightColor,
+              ),
+              child:(
+                Image.asset('assets/logo/logoapptodopordospesos.png',
+                      width: 100,
+                      height: 100,)
+                )),
+          Container(
+              margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 25.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Theme.of(context).highlightColor,
@@ -80,7 +55,7 @@ class Signin extends StatelessWidget {
                 },
               )),
           Container(
-              margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+              margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 25.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Theme.of(context).highlightColor,
@@ -100,7 +75,7 @@ class Signin extends StatelessWidget {
                 },
               )),
           Container(
-              margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+              margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 25.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
                 color: Theme.of(context).highlightColor,
@@ -120,7 +95,7 @@ class Signin extends StatelessWidget {
                 },
               )),
           Container(
-              margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+              margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 25.0),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.0),
                   color: Theme.of(context)
