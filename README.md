@@ -3,7 +3,9 @@
 Primer trabajo grupal en GitHub de Práctica Profesionalizante.
 
 `git clone https://github.com/Anonyzard/pp2-practico1 proyecto1practica2`
+
 `flutter create .`
+
 `flutter run`
 
 ## Getting Started
