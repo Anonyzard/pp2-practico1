@@ -34,10 +34,6 @@ class Login extends StatelessWidget {
         body: ListView(children: [Column(children: <Widget>[
             Container(
               margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0),
-                color: Theme.of(context).highlightColor,
-              ),
               child:(
                 Image.asset('assets/logo/logoapptodopordospesos.png',
                       width: 100,
