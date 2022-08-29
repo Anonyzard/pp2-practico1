@@ -22,7 +22,7 @@ class Signin extends StatelessWidget {
         ),
         backgroundColor: Theme.of(context)
             .secondaryHeaderColor, //Color.fromRGBO(255, 201, 117, 21),
-        body: Column(children: <Widget>[
+        body:ListView(children: [ Column(children: <Widget>[
             Container(
               margin: EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
               decoration: BoxDecoration(
@@ -151,8 +151,8 @@ class Signin extends StatelessWidget {
               ),
             ),
           ),
-        ]),
+        ])],
       ),
-    );
+    ));
   }
 }
