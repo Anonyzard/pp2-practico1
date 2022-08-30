@@ -10,10 +10,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Login(),
       theme: ThemeData(
-          backgroundColor: const Color.fromARGB(255, 201, 117, 21),
+          backgroundColor: Color.fromARGB(255, 3, 65, 153),
           primaryColor: Colors.grey.shade300,
-          secondaryHeaderColor: Colors.orange.shade100,
-          highlightColor: Color.fromRGBO(255, 201, 117, 21),
+          secondaryHeaderColor: Color.fromARGB(255, 236, 75, 35),
+          highlightColor: Color.fromARGB(235, 3, 0, 27),
           textTheme: const TextTheme(
               headline1: TextStyle(
                   fontSize: 20,

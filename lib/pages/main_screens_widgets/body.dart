@@ -25,7 +25,7 @@ class Allbody extends StatelessWidget {
     return ListView(children: [
       const Board(),
       catalog(context, "Comedor"),
-      catalog(context, "Comedor")
+      catalog(context, "Habitación")
     ]);
   }
 }
@@ -55,9 +55,9 @@ Container catalog(BuildContext context, nombreCategoria) {
           divider()
         ]),
         products(context, producto1.foto, producto1.nombre, producto1.precio),
-        products(context, producto1.foto, producto1.nombre, producto1.precio),
-        products(context, producto1.foto, producto1.nombre, producto1.precio),
-        products(context, producto1.foto, producto1.nombre, producto1.precio),
+        products(context, producto2.foto, producto2.nombre, producto2.precio),
+        products(context, producto3.foto, producto3.nombre, producto3.precio),
+        products(context, producto4.foto, producto4.nombre, producto4.precio),
       ],
     ),
   );
