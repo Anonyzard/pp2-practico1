@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.grey.shade300,
           secondaryHeaderColor: const Color.fromARGB(255, 236, 75, 35),
           highlightColor: const Color.fromARGB(235, 3, 0, 27),
+          dividerColor: Color.fromARGB(255, 255, 224, 178),
           textTheme: const TextTheme(
               headline1: TextStyle(
                   fontSize: 20,
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
               headline2: TextStyle(
                   fontSize: 10,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black),
+                  color: Colors.white),
               headline3: TextStyle(
                   fontSize: 17,
                   color: Colors.black,

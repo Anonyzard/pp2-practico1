@@ -37,7 +37,7 @@ class Signin extends StatelessWidget {
                         horizontal: 50.0, vertical: 25.0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: Theme.of(context).highlightColor,
+                      color: Theme.of(context).dividerColor,
                     ),
                     child: TextFormField(
                       key: _nombre,
@@ -59,7 +59,7 @@ class Signin extends StatelessWidget {
                         horizontal: 50.0, vertical: 25.0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: Theme.of(context).highlightColor,
+                      color: Theme.of(context).dividerColor,
                     ),
                     child: TextFormField(
                       // key: _nombre,
@@ -81,7 +81,7 @@ class Signin extends StatelessWidget {
                         horizontal: 50.0, vertical: 25.0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: Theme.of(context).highlightColor,
+                      color: Theme.of(context).dividerColor,
                     ),
                     child: TextFormField(
                       // key: _nombre,
@@ -104,7 +104,7 @@ class Signin extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
                         color: Theme.of(context)
-                            .highlightColor //Color.fromRGBO(255, 201, 117, 21),
+                            .dividerColor //Color.fromRGBO(255, 201, 117, 21),
                         ),
                     child: TextFormField(
                       decoration: const InputDecoration(
@@ -123,7 +123,7 @@ class Signin extends StatelessWidget {
                       child: Text(
                         'Log In',
                         style: TextStyle(
-                          color: Theme.of(context).backgroundColor,
+                          color: Theme.of(context).primaryColor,
                         ),
                       ),
                     )),
@@ -153,7 +153,7 @@ class Signin extends StatelessWidget {
                     },
                     child: Text(
                       'Iniciar sesión',
-                      style: TextStyle(color: Theme.of(context).highlightColor),
+                      style: TextStyle(color: Theme.of(context).primaryColor),
                     ),
                   ),
                 ),

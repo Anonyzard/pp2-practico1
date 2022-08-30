@@ -47,7 +47,7 @@ class Login extends StatelessWidget {
                         horizontal: 50.0, vertical: 50.0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
-                      color: Theme.of(context).highlightColor,
+                      color: Theme.of(context).dividerColor,
                     ),
                     child: TextFormField(
                       key: _nombre,
@@ -68,7 +68,7 @@ class Login extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
                         color: Theme.of(context)
-                            .highlightColor //Color.fromRGBO(255, 201, 117, 21),
+                            .dividerColor //Color.fromRGBO(255, 201, 117, 21),
                         ),
                     child: TextFormField(
                       decoration: const InputDecoration(
@@ -91,7 +91,7 @@ class Login extends StatelessWidget {
                       child: Text(
                         'Sign In',
                         style: TextStyle(
-                          color: Theme.of(context).backgroundColor,
+                          color: Theme.of(context).primaryColor,
                         ),
                       ),
                     )),
@@ -121,7 +121,7 @@ class Login extends StatelessWidget {
                     },
                     child: Text(
                       'Iniciar sesión',
-                      style: TextStyle(color: Theme.of(context).highlightColor),
+                      style: TextStyle(color: Theme.of(context).primaryColor),
                     ),
                   ),
                 ),

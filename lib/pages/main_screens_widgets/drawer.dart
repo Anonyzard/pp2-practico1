@@ -36,12 +36,15 @@ class Drawers extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        Text(
-                          "Hola usuario",
-                          style: Theme.of(context).textTheme.headline3,
-                        ),
+                        Text("Hola usuario",
+                            style: TextStyle(
+                                color: Theme.of(context).primaryColor,
+                                fontSize: 15)),
                         Text("CUENTA PREMIUM",
-                            style: Theme.of(context).textTheme.headline1)
+                            style: TextStyle(
+                                color: Theme.of(context).primaryColor,
+                                fontSize:
+                                    20)) //Theme.of(context).textTheme.headline1)
                       ],
                     )
                   ],
@@ -56,10 +59,14 @@ class Drawers extends StatelessWidget {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20.0)),
                     child: Text(
-                      "cerrar sesion",
-                      style: Theme.of(context).textTheme.headline3,
+                      "Cerrar sesión",
+                      style: TextStyle(
+                          color: Theme.of(context).primaryColor, fontSize: 15),
                     ),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.pop(context);
+                      Navigator.pop(context);
+                    },
                     elevation: 30,
                   ),
                 )

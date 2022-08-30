@@ -10,7 +10,7 @@ AppBar Appbar(BuildContext context) {
     backgroundColor: Theme.of(context).backgroundColor,
     title: Text(
       "TP2P",
-      style: Theme.of(context).textTheme.headline1,
+      style: TextStyle(color: Theme.of(context).primaryColor, fontSize: 20),
       textAlign: TextAlign.start,
     ),
     actions: [

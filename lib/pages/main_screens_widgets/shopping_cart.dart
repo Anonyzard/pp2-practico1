@@ -31,7 +31,8 @@ class botones_superiores extends StatelessWidget {
               onPressed: () {},
               child: Text(
                 "Carrito",
-                style: Theme.of(context).textTheme.headline3,
+                style: TextStyle(
+                    color: Theme.of(context).primaryColor, fontSize: 17.5),
               ),
             ),
             MaterialButton(
@@ -40,7 +41,8 @@ class botones_superiores extends StatelessWidget {
               onPressed: () {},
               child: Text(
                 "Guardado",
-                style: Theme.of(context).textTheme.headline3,
+                style: TextStyle(
+                    color: Theme.of(context).primaryColor, fontSize: 17.5),
               ),
             )
           ],
@@ -56,7 +58,7 @@ AppBar barra(BuildContext context) {
     backgroundColor: Theme.of(context).backgroundColor,
     title: Text(
       "Carrito de compras",
-      style: Theme.of(context).textTheme.headline3,
+      style: TextStyle(color: Theme.of(context).primaryColor, fontSize: 20),
     ),
   );
 }
