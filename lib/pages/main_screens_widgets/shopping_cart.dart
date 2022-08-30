@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto1practica2/pages/main_screens_widgets/drawer.dart';
 
 class ShoppingCart extends StatelessWidget {
   const ShoppingCart({Key? key}) : super(key: key);
@@ -13,6 +12,7 @@ class ShoppingCart extends StatelessWidget {
   }
 }
 
+// ignore: camel_case_types
 class botones_superiores extends StatelessWidget {
   const botones_superiores({Key? key}) : super(key: key);
 

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:proyecto1practica2/pages/main_screens_widgets/body.dart';
 
 class Drawers extends StatelessWidget {
   const Drawers({Key? key}) : super(key: key);

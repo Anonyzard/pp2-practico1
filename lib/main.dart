@@ -1,19 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:proyecto1practica2/login.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: const Login(),
       theme: ThemeData(
-          backgroundColor: Color.fromARGB(255, 3, 65, 153),
+          backgroundColor: const Color.fromARGB(255, 3, 65, 153),
           primaryColor: Colors.grey.shade300,
-          secondaryHeaderColor: Color.fromARGB(255, 236, 75, 35),
-          highlightColor: Color.fromARGB(235, 3, 0, 27),
+          secondaryHeaderColor: const Color.fromARGB(255, 236, 75, 35),
+          highlightColor: const Color.fromARGB(235, 3, 0, 27),
           textTheme: const TextTheme(
               headline1: TextStyle(
                   fontSize: 20,

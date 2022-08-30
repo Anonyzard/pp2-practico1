@@ -18,8 +18,8 @@ AppBar Appbar(BuildContext context) {
         elevation: 20,
         color: Theme.of(context).backgroundColor,
         onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => ShoppingCart()));
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const ShoppingCart()));
         },
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(100.0)),
