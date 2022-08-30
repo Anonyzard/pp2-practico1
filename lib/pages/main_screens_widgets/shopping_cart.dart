@@ -6,45 +6,22 @@ class ShoppingCart extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: AllbodySC(),
-      drawer: Drawers(),
+    return Scaffold(
+      appBar: barra(context),
+      body: const botones_superiores(),
     );
   }
 }
 
-class AllbodySC extends StatelessWidget {
-  const AllbodySC({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(children: [appbar2(), carrito_screen(context)]);
-  }
-}
-
-class appbar2 extends StatelessWidget {
-  const appbar2({Key? key}) : super(key: key);
+class botones_superiores extends StatelessWidget {
+  const botones_superiores({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
-      width: 400,
+      height: 50,
       color: Theme.of(context).backgroundColor,
       child: Column(mainAxisAlignment: MainAxisAlignment.end, children: [
-        Row(mainAxisAlignment: MainAxisAlignment.start, children: [
-          const SizedBox(width: 10),
-          IconButton(
-            autofocus: true,
-            iconSize: 30,
-            icon: const Icon(Icons.menu),
-            onPressed: () {},
-          ),
-          Text(
-            "Carrito de compras",
-            style: Theme.of(context).textTheme.headline3,
-          )
-        ]),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -73,16 +50,13 @@ class appbar2 extends StatelessWidget {
   }
 }
 
-Container carrito_screen(BuildContext context) {
-  return Container(
-    height: 600,
-    color: Theme.of(context).secondaryHeaderColor,
-  );
-}
-
-Container guardado_screen() {
-  return Container(
-    height: 600,
-    color: Colors.red,
+AppBar barra(BuildContext context) {
+  return AppBar(
+    elevation: 30,
+    backgroundColor: Theme.of(context).backgroundColor,
+    title: Text(
+      "Carrito de compras",
+      style: Theme.of(context).textTheme.headline3,
+    ),
   );
 }
