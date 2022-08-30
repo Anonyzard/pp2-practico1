@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:proyecto1practica2/signin.dart';
 import 'package:proyecto1practica2/pages/main_screen.dart';
 
-void main() => runApp(Login());
+void main() => runApp(const Login());
 
 // class MyCustomForm extends StatefulWidget {
 //   const MyCustomForm({super.key}); // #ffaa33 #c97515
@@ -24,7 +24,7 @@ class Login extends StatelessWidget {
         title: 'Material App',
         home: Scaffold(
           appBar: AppBar(
-            title: Text('Todo por 2 pesos'),
+            title: const Text('Todo por 2 pesos'),
             //drawer: const Image.asset('assets/logo/logoapptodopordospesos.png')
             backgroundColor: Theme.of(context)
                 .backgroundColor, //Color.fromARGB(255, 201, 117, 21),
@@ -35,16 +35,16 @@ class Login extends StatelessWidget {
             children: [
               Column(children: <Widget>[
                 Container(
-                    margin:
-                        EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+                    margin: const EdgeInsets.symmetric(
+                        horizontal: 50.0, vertical: 50.0),
                     child: (Image.asset(
                       'assets/logo/logoapptodopordospesos.png',
                       width: 100,
                       height: 100,
                     ))),
                 Container(
-                    margin:
-                        EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+                    margin: const EdgeInsets.symmetric(
+                        horizontal: 50.0, vertical: 50.0),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10.0),
                       color: Theme.of(context).highlightColor,
@@ -52,7 +52,7 @@ class Login extends StatelessWidget {
                     child: TextFormField(
                       key: _nombre,
                       decoration:
-                          InputDecoration(labelText: 'Ingrese su nombre'),
+                          const InputDecoration(labelText: 'Ingrese su nombre'),
                       obscureText: false,
                       // The validator receives the text that the user has entered.
                       validator: (value) {
@@ -63,16 +63,16 @@ class Login extends StatelessWidget {
                       },
                     )),
                 Container(
-                    margin:
-                        EdgeInsets.symmetric(horizontal: 50.0, vertical: 50.0),
+                    margin: const EdgeInsets.symmetric(
+                        horizontal: 50.0, vertical: 50.0),
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10.0),
                         color: Theme.of(context)
                             .highlightColor //Color.fromRGBO(255, 201, 117, 21),
                         ),
                     child: TextFormField(
-                      decoration:
-                          InputDecoration(labelText: 'Ingrese su constraseña'),
+                      decoration: const InputDecoration(
+                          labelText: 'Ingrese su constraseña'),
                       obscureText: true,
                     )),
                 Container(
@@ -84,7 +84,8 @@ class Login extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => Signin()),
+                          MaterialPageRoute(
+                              builder: (context) => const Signin()),
                         );
                       },
                       child: Text(
@@ -97,7 +98,7 @@ class Login extends StatelessWidget {
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
-                    color: Color.fromARGB(255, 201, 117, 21),
+                    color: const Color.fromARGB(255, 201, 117, 21),
                   ),
                   child: MaterialButton(
                     color: Theme.of(context)
@@ -114,7 +115,8 @@ class Login extends StatelessWidget {
                       //   );
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => main_screens()),
+                        MaterialPageRoute(
+                            builder: (context) => const main_screens()),
                       );
                     },
                     child: Text(
