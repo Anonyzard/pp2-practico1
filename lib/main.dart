@@ -12,9 +12,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: const Login(),
       theme: ThemeData(
-          backgroundColor: const Color.fromARGB(255, 3, 65, 153),
+          backgroundColor: Color.fromARGB(255, 201, 117, 21),
           primaryColor: Colors.grey.shade300,
-          secondaryHeaderColor: const Color.fromARGB(255, 236, 75, 35),
+          secondaryHeaderColor: Colors.orange.shade100,
           highlightColor: const Color.fromARGB(235, 3, 0, 27),
           dividerColor: Color.fromARGB(255, 255, 224, 178),
           textTheme: const TextTheme(

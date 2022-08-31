@@ -91,7 +91,7 @@ class Login extends StatelessWidget {
                       child: Text(
                         'Sign In',
                         style: TextStyle(
-                          color: Theme.of(context).primaryColor,
+                          color: Theme.of(context).highlightColor,
                         ),
                       ),
                     )),
