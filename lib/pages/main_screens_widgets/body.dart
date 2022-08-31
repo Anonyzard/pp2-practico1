@@ -16,6 +16,14 @@ var producto3 =
     Productos(03, "Lavarropa", "assets/products/labarropa.png", "70000");
 var producto4 =
     Productos(04, "Microondas", "assets/products/microondas.png", "40000");
+var producto5 =
+    Productos(05, "Armario", "assets/products/armario.png", "30000");
+var producto6 =
+    Productos(06, "Cucheta", "assets/products/cucheta.png", "60000");
+var producto7 =
+    Productos(07, "Velador", "assets/products/velador.png", "11000");
+var producto8 =
+    Productos(08, "Silla Gamer", "assets/products/silla_gamer.png", "25000");
 
 class Allbody extends StatelessWidget {
   const Allbody({Key? key}) : super(key: key);
@@ -24,13 +32,28 @@ class Allbody extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(children: [
       const Board(),
-      catalog(context, "Comedor"),
-      catalog(context, "Habitación")
+      catalog(
+        context,
+        "Comedor",
+        products(context, producto1.foto, producto1.nombre, producto1.precio),
+        products(context, producto2.foto, producto2.nombre, producto2.precio),
+        products(context, producto3.foto, producto3.nombre, producto3.precio),
+        products(context, producto4.foto, producto4.nombre, producto4.precio),
+      ),
+      catalog(
+        context,
+        "Habitación",
+        products(context, producto5.foto, producto5.nombre, producto5.precio),
+        products(context, producto6.foto, producto6.nombre, producto6.precio),
+        products(context, producto7.foto, producto7.nombre, producto7.precio),
+        products(context, producto8.foto, producto8.nombre, producto8.precio),
+      )
     ]);
   }
 }
 
-Container catalog(BuildContext context, nombreCategoria) {
+Container catalog(BuildContext context, nombreCategoria, producto1, productos2,
+    productos3, productos4) {
   return Container(
     margin: const EdgeInsets.all(20),
     decoration: BoxDecoration(
@@ -54,10 +77,10 @@ Container catalog(BuildContext context, nombreCategoria) {
           ),
           divider()
         ]),
-        products(context, producto1.foto, producto1.nombre, producto1.precio),
-        products(context, producto2.foto, producto2.nombre, producto2.precio),
-        products(context, producto3.foto, producto3.nombre, producto3.precio),
-        products(context, producto4.foto, producto4.nombre, producto4.precio),
+        producto1,
+        productos2,
+        productos3,
+        productos4
       ],
     ),
   );
