@@ -123,7 +123,7 @@ class Signin extends StatelessWidget {
                       child: Text(
                         'Log In',
                         style: TextStyle(
-                          color: Theme.of(context).primaryColor,
+                          color: Theme.of(context).highlightColor,
                         ),
                       ),
                     )),
